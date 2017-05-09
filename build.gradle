@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+    }
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "25.0.2"
+ 
+      lintOptions {
+          abortOnError false
+      }
+  
+    sourceSets {
+
+        main {
+            assets.srcDirs       = ['assets']
+            res.srcDirs          = ['res']
+            aidl.srcDirs         = ['src']
+            resources.srcDirs    = ['src']
+            renderscript.srcDirs = ['src']
+            java.srcDirs         = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+
+        }
+    }
+}
