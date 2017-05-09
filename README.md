@@ -1,0 +1,7 @@
+修复volley中只能取到一个cookie的bug,只修改HurlStack文件。
+
+打jar流程：
+1.确保安装了gradle
+2.确保添加了android sdk环境变量
+3.cd到项目文件夹下 执行gradle build
+4.在生成的aar文件中 提取jar即可
